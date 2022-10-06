@@ -49,7 +49,7 @@ width: 32px;
 const UserName = styled.div`
 display: flex;
 
-font-weight: bold;
+font-weight: 700;
 `
 
 const When = styled.div``
@@ -61,7 +61,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 color: var(--moderate-blue);
-font-weight: bolder;
+font-weight: 700;
 `
 
 const Score = styled.div`
@@ -99,6 +99,14 @@ color: var(--white);
 border-radius: 5px;
 margin-left: 5px;
 `
+const ReplyingTo = styled.span`
+color: var(--moderate-blue);
+margin-right: 5px;
+
+::before {
+    content: '@';
+}
+`
 const Buttons = styled.div`
 display: flex;
 `
@@ -133,6 +141,7 @@ const CommentCard = ({ card, currentUser }) => {
                     <When>{card.createdAt}</When>
                 </Header>
                 <Body>
+                    {card.replyingTo && <ReplyingTo>{card.replyingTo}</ReplyingTo>}
                     {card.content}
                 </Body>
                 <Footer>
