@@ -22,6 +22,20 @@
       "replies": []
     },
     {
+      "id": 5,
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec libero id magna pretium posuere. Vivamus semper tempor pellentesque. Nullam rutrum condimentum justo sit amet tempus. Nulla in neque vel tortor bibendum commodo. Nam sem lacus, gravida eu ipsum ut, maximus ornare turpis. Phasellus eu lorem finibus, mattis ex et, tincidunt odio. Nullam facilisis enim vel blandit placerat. Cras ut tellus mauris. Nullam et tincidunt purus, quis rutrum ex. Donec venenatis ullamcorper turpis ac finibus. Etiam dapibus mollis velit nec viverra. Ut vel arcu sapien. Fusce non dolor massa. Vivamus tempor maximus quam, eget mollis orci imperdiet eget. Nam nisl tortor, malesuada aliquet dui quis, ornare rhoncus libero. Aenean mollis odio id suscipit viverra.",
+      "createdAt": "2 month ago",
+      "score": 11,
+      "user": {
+        "image": { 
+          "png": "./images/avatars/image-juliusomo.png",
+          "webp": "./images/avatars/image-juliusomo.webp"
+        },
+        "username": "juliusomo"
+      },
+      "replies": []
+    },
+    {
       "id": 2,
       "content": "Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
       "createdAt": "2 weeks ago",

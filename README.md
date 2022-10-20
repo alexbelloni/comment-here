@@ -60,8 +60,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 create-react-app  
 mobile-first  
-create basic components to show comments on screen
-apply style
+create basic components to show comments on screen  
+apply styles  
 
 
 

@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-import juliusomo from '../../images/avatars/image-juliusomo.png'
+import img1 from '../../images/avatars/image-juliusomo.png'
 
 const Container = styled.div`
 display: flex;
 flex-direction: column;
-margin: 1rem;
 background-color: var(--white);
-padding: 0.5rem 1rem;
+padding: 0.5rem 0;
 border-radius: 5px;
 `
 const Line = styled.div`
@@ -86,44 +85,29 @@ height: 20px;
 }
 `
 
-const AddCommentCard = ({ onFocusSend, onSend }) => {
-    const [content, setContent] = useState('')
+const ReplyCommentCard = ({ onSend }) => {
+    const [content, setContent] = useState('');
 
     return (
         <Container>
             <Line>
-                <Avatar src={juliusomo} />
+                <Avatar src={img1} />
                 <TextArea rows="5" cols="33" placeholder='Add a comment...'
                     onChange={e => setContent(e.target.value)}
-                    value={content}
-                    onFocus={onFocusSend}
-                >
+                    value={content}>
                 </TextArea>
-                <Send onFocus={() => {
-                    onFocusSend();
-                }}
-                    onClick={() => {
-                        onSend(content)
-                        setContent('')
-                    }}>
-                    SEND
+                <Send onClick={()=>onSend(content)}>
+                    REPLY
                 </Send>
             </Line>
             <Footer>
-                <Avatar src={juliusomo} />
-                <Send
-                    onFocus={() => {
-                        onFocusSend();
-                    }}
-                    onClick={() => {
-                        onSend(content)
-                        setContent('')
-                    }}>
-                    SEND
+                <Avatar src={img1} />
+                <Send onClick={()=>onSend(content)}>
+                    REPLY
                 </Send>
             </Footer>
         </Container>
     )
 }
 
-export default AddCommentCard;
+export default ReplyCommentCard;
